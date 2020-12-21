@@ -19,5 +19,7 @@ namespace ResoldProducts.Data
         public DbSet<ResoldProducts.Models.Seller> Seller { get; set; }
 
         public DbSet<ResoldProducts.Models.Category> Category { get; set; }
+
+        public DbSet<ResoldProducts.Models.ProductCategory> ProductCategory { get; set; }
     }
 }

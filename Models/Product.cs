@@ -25,5 +25,13 @@ namespace ResoldProducts.Models
         [Display(Name = "Categorii Produs")]
         public ICollection<ProductCategory> ProductCategories { get; set; }
 
+        public string GetProdSeller
+        {
+            get
+            {
+                return Denumire + ", pret: "+Pret;
+            }
+        }
+
     }
 }

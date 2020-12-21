@@ -10,9 +10,9 @@ namespace ResoldProducts.Models
     {
         public int ID { get; set; }
 
+        [Display(Name = "Nume Vanzator")]
         [RegularExpression(@"^[A-Z][a-z]+\s[A-Z][a-z]+$", ErrorMessage ="Trebuie sa fie de forma Nume Prenume")
          , Required, StringLength(50, MinimumLength = 3)]
-        [Display(Name = "Nume Vanzator")]
         public string SellerName { get; set; }
 
         [RegularExpression(
