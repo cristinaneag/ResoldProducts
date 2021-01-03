@@ -22,7 +22,7 @@ namespace ResoldProducts.Pages.ProductCategories
         public IActionResult OnGet()
         {
         ViewData["CategoryID"] = new SelectList(_context.Category, "ID", "CategoryName");
-        ViewData["ProductID"] = new SelectList(_context.Product, "ID", "Denumire");
+        ViewData["ProductID"] = new SelectList(_context.Product, "ID", "GetProdSeller");
             return Page();
         }
 

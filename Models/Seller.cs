@@ -23,7 +23,7 @@ namespace ResoldProducts.Models
         [RegularExpression(@"^[0-9]{10}$", ErrorMessage ="Nr. de telefon trebuie sa contina doar 10 cifre"),Required]
         public string Telefon { get; set; }
 
-        [RegularExpression(@"^[A-Z]+[a-z]+(-|\s)+[A-Z]+[a-z]+,[A-Z][a-z]+$", ErrorMessage ="Locatia trebuie sa fie de forma Localitate,Judet"), Required]
+        [RegularExpression(@"^[A-Z][a-z]+((-|\s)[A-Z][a-z]+)?,[A-Z][a-z]+$", ErrorMessage ="Locatia trebuie sa fie de forma Localitate,Judet"), Required]
         public string Locatie { get; set; }
         public ICollection<Product> Products { get; set; }
     }

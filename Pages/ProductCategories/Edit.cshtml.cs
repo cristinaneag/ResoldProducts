@@ -38,7 +38,7 @@ namespace ResoldProducts.Pages.ProductCategories
             {
                 return NotFound();
             }
-           ViewData["CategoryID"] = new SelectList(_context.Category, "ID", "CategoryName");
+           ViewData["CategoryID"] = new SelectList(_context.Category, "ID", "GetProdSeller");
            ViewData["ProductID"] = new SelectList(_context.Product, "ID", "Denumire");
             return Page();
         }
